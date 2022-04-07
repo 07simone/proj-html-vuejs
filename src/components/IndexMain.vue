@@ -17,7 +17,7 @@
           <div class="row">
             <div class="col-6">
               <img src="../assets/img/logo-img-01.png" alt="">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio sint, accusantium minima illum deleniti veniam iste 
+              <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio sint, accusantium minima illum deleniti veniam iste 
                 aliquam quaerat nemo, beatae sapiente earum. Consequuntur animi autem architecto quidem natus reprehenderit.</p>
                 <div class="bottoni">
                     <button type="button" class="btn btn-white btn-light fw-bold">READ MORE | <i class="fas fa-long-arrow-alt-right"></i> </button>
