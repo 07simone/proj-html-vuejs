@@ -1,34 +1,55 @@
 <template>
   <div class="main">
-    <section class="header">
-          <img class="logo" src="../assets/img/logo-img-01.png" alt="" > 
-              <ul>
-                <li v-for="(element, index) in listaMenu" :key=index>
-                  <a :href="element.url"></a>
-                  <h5>{{element.name}}</h5>
-                  <a href="#"></a>
-                </li>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-list-ul"></i>
-              </ul>
-    </section>
-    <section class="information">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-6">
-              <img src="../assets/img/logo-img-01.png" alt="">
-              <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio sint, accusantium minima illum deleniti veniam iste 
-                aliquam quaerat nemo, beatae sapiente earum. Consequuntur animi autem architecto quidem natus reprehenderit.</p>
-                <div class="bottoni">
-                    <button type="button" class="btn btn-white btn-light fw-bold">READ MORE | <i class="fas fa-long-arrow-alt-right"></i> </button>
-                    <button type="button" class="btn btn-light fw-bold">PURCHASE | <i class="fas fa-long-arrow-alt-right"></i></button>
-                </div>
-              
-            </div>
+
+    <div class="contenitore1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mt-4">
+            <h1 class="fw-bold">Our specialties</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-    </section>
-    
+          <div class="row">
+            <div class="col-12 ">
+                <ul class="d-flex mt-5">
+                  <li class="" v-for="(element,index) in specialità" :key=index>
+                    <img class=" d-flex justify-content-center" :src="element.img" alt=""> 
+                    <h3 class="fw-bold mt-3 text-center">{{element.text}}</h3>
+                    <p class="text-center">{{element.description}}</p>
+                  </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="contenitore2">
+      <div class="biographi">
+        <img class="h-50 w-50" src="../assets/img/h1-img-01.jpg" alt=""> 
+        <div class="box position-absolute">
+          <div class="arrow position-relative">
+              <i class="fas fa-long-arrow-alt-left mx-1"></i>
+              <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <div class="contenitore3 p-3">
+      <div class="name">
+          <h1 class="fw-bold fs-4"> Jason Bickford</h1>
+          <p>founder and executive directon</p>
+          <div class="line "></div>
+      </div>
+      
+        <p class="lorem mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod animi nobis sit repellat porro nihil eaque in, repellendus totam doloremque, ut corrupti. Voluptatum dolorem aliqua..</p>
+        <div class="social d-flex ">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin mx-1"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+
+    </div> 
   </div>
 </template>
 
@@ -37,34 +58,32 @@ export default {
   name: 'IndexMain',
   data:function(){
     return{
-      listaMenu:[
+      specialità:[
         {
-          name: "HOME",
-          url:"#"
+          img:require('@/assets/img/logo-side-area-img-01-1.png'),
+          text:"Knowing",
+          description:"lorem ipsum dolor sit amet quis consect"
         },
         {
-          name: "PAGES",
-          url:"#"
+          img:require('@/assets/img/logo-side-area-img-01-1.png'),
+          text:"Selling",
+          description:"lorem ipsum dolor sit amet quis consect"
         },
         {
-          name: "BLOG",
-          url:"#"
+          img:require('@/assets/img/logo-side-area-img-01-1.png'),
+          text:"Learning",
+          description:"lorem ipsum dolor sit amet quis consect"
         },
         {
-          name: "SHOP",
-          url:"#"
-        },
-        {
-          name: "EVENTS",
-          url:"#"
-        },
-        {
-          name: "ELEMENTS",
-          url:"#"
+          img:require('@/assets/img/logo-side-area-img-01-1.png'),
+          text:"Contact",
+          description:"lorem ipsum dolor sit amet quis consect"
         },
       ]
+      
     }
   }
+
 }
 
 
@@ -73,54 +92,77 @@ export default {
 
 <style scoped lang="scss">
 .main{
-  background-image: url(../assets/img/rev-slider-main-home-img-03.jpg);
+  background-image:  url(../assets/img/rbt-placeholder.jpg);
   height: 100vh;
-.header{
-  justify-content: space-between;
+  position: relative;
+.contenitore1{
   display: flex;
-.logo{
-  height: 50px;
-  margin-left: 2rem;
-}
+  position: absolute;
+  left: 50%;
+  transform: translate( - 50%);
+  height: 500px;
+  width: 1200px;
+  background-color: rgb(81, 243, 189);
+  margin-top: -2rem;
+  
   ul{
-    height: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: end;
-  }
-
-  li{
+    margin-left: 2rem;
     list-style-type: none;
-    padding: 0.8rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    align-self: center;
-    line-height: 12vh;
-    margin-right: 2rem;
-
-    &:hover{
-      color: orange;
-
+    li{
+      text-align:-moz-center
     }
   }
-  a{
-      text-decoration: none;
-      color: black;
+
+}
+.contenitore2{
+  position: absolute;
+  bottom:10%;
+  left:50%;
+  transform: translate( -50%, - 10%);
+
+
+  .box{
+    position: absolute;
+    bottom:0%;
+    left: 0%;
+    background-color: rgb(221, 63, 0);
+    width: 5rem;
+    height: 3rem;
+
+    .arrow{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, - 50%);
+      display: flex;
+      justify-content: center;
+      
     }
-  i{
-    margin-right: 1.5rem;
   }
 }
-  .information{
-    padding: 25rem  10rem
+.contenitore3{
+  bottom:15%;
+  right:23%;
+  transform: translate( -23%, - 15%);
+  position: absolute;
+  height: 200px;
+  width: 450px;
+  background-color: white;
+
+  .lorem{
+    font-size: 0.6rem;
+    color: rgb(175, 171, 171);
   }
-  .btn{
-      margin-right: 2rem;
-      &:hover{
-        background-color: rgb(221, 63, 0);
-        color: white;
-        
-      }
-    }
+.social{
+  i{
+    color:red
+  }
+}
+  .line{
+    width: 20%;
+    height: 15px;
+    border-top:2px solid rgb(221, 63, 0)
+    
+  }
+} 
 }
 </style>

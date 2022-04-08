@@ -1,20 +1,27 @@
 <template>
   <div id="app">
     
+    <IndexHeader />
     <IndexMain />
-    <Indexjumbotron />
+    <IndexJumbotron />
+    <IndexThumbnails />
+
   </div>
 </template>
 
 <script>
 
+import IndexHeader from './components/IndexHeader.vue'
 import IndexMain from './components/IndexMain.vue'
-import Indexjumbotron from './components/Indexjumbotron.vue'
+import IndexJumbotron from './components/IndexJumbotron.vue'
+import IndexThumbnails from './components/IndexThumbnails.vue'
 export default {
   name: 'App',
   components: {
+    IndexHeader,
     IndexMain,
-    Indexjumbotron
+    IndexJumbotron,
+    IndexThumbnails
   }
 }
 </script>

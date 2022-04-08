@@ -1,45 +1,71 @@
 <template>
-  <div class="jumbotron">
+<div>
+<div class="jumbotron-top">
+    <div class="container.fluid">
+      <div class="box-eventi">
+        <h2 class="mx-3">Upcoming Events</h2>
+        <ul class="list-group">
+            <li class="listaCittà" v-for="(element,index) in eventi" :key="index">
+              <h3>{{element.città}}</h3>
+              <p><i class="far fa-clock"></i>{{element.orario}}</p>
+              <p><i class="fas fa-map-marker-alt"></i>{{element.luogo}}</p>
+              <span>{{element.leggere}}</span>
+              <div class="box-date text-center">
+                <h5>07</h5>
+                <p>jan 2022</p>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
 
-    <div class="contenitore">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mt-4">
-            <h1 class="fw-bold">Our specialties</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  <div class="jumbotron-bottom d-flex align-items-center">
+    <div class="container">
+      <div class="row p-5 ">
+        <div class="col-6">
+          <h1 class="fw-bold">Creative Leader</h1>
+          <div class="line "></div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eaque nobis labore, exercitationem sit animi quisquam nam maxime tempora, hic distinctio earum repellat recusandae at doloremque, necessitatibus harum deleniti quos.</p>
+          <span class="fw-bold">READ MORE</span>
+        </div>
+        <div class="col-6 p-3">
+          <div class="dati d-flex justify-content-between">
+            <h5 class="fw-bold">Mentorship</h5>
+            <span>78%</span>
+          </div>
+          <div class="progress" style="height:3%">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 78%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="30"></div>
+          </div>
+          <div class="dati d-flex justify-content-between">
+            <h5 class="fw-bold">Education</h5>
+            <span>95%</span>
+          </div>
+          <div class="progress" style="height:3%">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="30"></div>
+          </div>
+          <div class="dati d-flex justify-content-between">
+            <h5 class="fw-bold">Learning</h5>
+            <span>65%</span>
+          </div>
+          <div class="progress" style="height:3%">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="dati d-flex justify-content-between">
+            <h5 class="fw-bold">Motivation</h5>
+            <span>83%</span>
+          </div>
+          <div class="progress" style="height: 3%">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 83%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
-          <div class="row">
-            <div class="col-12 ">
-                <ul class="d-flex mt-5">
-                  <li class="" v-for="(element,index) in specialità" :key=index>
-                    <img class=" d-flex justify-content-center" :src="element.img" alt=""> 
-                    <h3 class="fw-bold mt-3 text-center">{{element.text}}</h3>
-                    <p class="text-center">{{element.description}}</p>
-                  </li>
-              </ul>
-            </div>
-          </div>
       </div>
     </div>
-
-    <div class="contenitore2">
-      <div class="biographi">
-        <img class="h-50 w-50" src="../assets/img/h1-img-01.jpg" alt=""> 
-      </div>
-    </div>
-    <div class="contenitore3 p-3">
-      <h1 class="fw-bold fs-4"> Jason Bickford</h1>
-      <p>founder and executive directon</p>
-      <p class="lorem mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod animi nobis sit repellat porro nihil eaque in, repellendus totam doloremque, ut corrupti. Voluptatum dolorem aliqua..</p>
-      <div class="social d-flex ">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-twitter"></i>
-      </div>
-    
-    </div> 
   </div>
+</div>
+
+
 </template>
 
 <script>
@@ -47,26 +73,24 @@ export default {
   name: 'IndexJumbotron',
   data:function(){
     return{
-      specialità:[
+      eventi:[
         {
-          img:require('@/assets/img/logo-side-area-img-01-1.png'),
-          text:"Knowing",
-          description:"lorem ipsum dolor sit amet quis consect"
+          città:"Melbourne Coaching",
+          orario:"9:00am - 5:00pm,Jan 7,2022",
+          luogo:"Cambridge,MA 02138,USA",
+          leggere:"READ MORE"
         },
         {
-          img:require('@/assets/img/logo-side-area-img-01-1.png'),
-          text:"Selling",
-          description:"lorem ipsum dolor sit amet quis consect"
+          città:"New York Coaching",
+          orario:"9:00am - 5:00pm,Jan 7,2022",
+          luogo:"Cambridge,MA 02138,USA",
+          leggere:"READ MORE"
         },
         {
-          img:require('@/assets/img/logo-side-area-img-01-1.png'),
-          text:"Learning",
-          description:"lorem ipsum dolor sit amet quis consect"
-        },
-        {
-          img:require('@/assets/img/logo-side-area-img-01-1.png'),
-          text:"Contact",
-          description:"lorem ipsum dolor sit amet quis consect"
+          città:"London Coaching",
+          orario:"9:00am - 5:00pm,Jan 7,2022",
+          luogo:"Cambridge,MA 02138,USA",
+          leggere:"READ MORE"
         },
       ]
       
@@ -80,52 +104,55 @@ export default {
 
 
 <style scoped lang="scss">
-.jumbotron{
-  background-image:  url(../assets/img/rbt-placeholder.jpg);
+.jumbotron-top{
   height: 100vh;
+  background-image: url(../assets/img/h1-img-09.jpg);
   position: relative;
-.contenitore{
-  display: flex;
-  position: absolute;
-  left: 50%;
-  transform: translate( - 50%);
-  height: 500px;
-  width: 1200px;
-  background-color: rgb(81, 243, 189);
-  margin-top: -2rem;
-  
-  ul{
-    margin-left: 2rem;
-    list-style-type: none;
-    li{
-      text-align:-moz-center
+ 
+  .box-eventi{
+    position: absolute;
+    top:50%;
+    left: 27%;
+    transform: translate(-27%, - 50%);
+    width: 26rem;
+    height: 34rem;
+    background-color: lightyellow;
+    
+    .listaCittà{
+      position: relative;
+      list-style-type: none;
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      margin-left: 5rem;
+      &:hover{
+        background-color: white;
+      }
+      i{
+        color:red
+      }
+
+      .box-date{
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(221, 63, 0) ;
+        color: white;
+      }
     }
   }
-
 }
-.contenitore2{
-  position: absolute;
-  bottom:10%;
-  left:50%;
-  transform: translate( -50%, - 10%);
-}
-.contenitore3{
-  bottom:15%;
-  right:23%;
-  transform: translate( -23%, - 15%);
-  position: absolute;
-  height: 200px;
-  width: 450px;
-  background-color: white;
 
-  .lorem{
-    font-size: 0.8rem;
-    color: rgb(175, 171, 171);
+.jumbotron-bottom{
+  height: 60vh;
+  .line{
+    width: 6%;
+    height: 15px;
+    border-top:2px solid rgb(221, 63, 0)
+    
   }
-
-  .social{
   
-  } 
-} 
 }
+
 </style>
