@@ -108,7 +108,7 @@ export default {
   height: 100vh;
   background-image: url(../assets/img/h1-img-09.jpg);
   position: relative;
- 
+
   .box-eventi{
     position: absolute;
     top:50%;
