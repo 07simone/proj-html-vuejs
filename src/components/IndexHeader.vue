@@ -12,6 +12,8 @@
                 <i class="fas fa-list-ul"></i>
               </ul>
     </section>
+
+   <!--  informazioni -->
     <section class="information">
         <div class="container-fluid">
           <div class="row">
@@ -132,13 +134,13 @@ export default {
     & .slide-left{
       position: absolute;
       top:50%;
-      left: 5%;
+      left: 100px;
       font-size: 2rem;
   }
   & .slide-right{
     position: absolute;
     top:50%;
-    right: 5%;
+    right: 100px;
     font-size: 2rem;
 
 }

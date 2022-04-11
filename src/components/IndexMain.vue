@@ -1,6 +1,8 @@
 <template>
   <div class="main">
 
+<!-- contenitorespecialità -->
+
     <div class="contenitore1">
       <div class="container">
         <div class="row">
@@ -23,6 +25,8 @@
       </div>
     </div>
 
+<!-- contenitore secondario -->
+
     <div class="contenitore2">
       <div class="biographi">
         <img class="h-50 w-50" src="../assets/img/h1-img-01.jpg" alt=""> 
@@ -35,27 +39,34 @@
         </div>
       </div>
     </div>
-    <div class="contenitore3 p-3">
-      <div class="name">
-          <h1 class="fw-bold fs-4"> Jason Bickford</h1>
-          <p>founder and executive directon</p>
-          <div class="line "></div>
-      </div>
-      
-        <p class="lorem mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod animi nobis sit repellat porro nihil eaque in, repellendus totam doloremque, ut corrupti. Voluptatum dolorem aliqua..</p>
-        <div class="social d-flex ">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-linkedin mx-1"></i>
-          <i class="fab fa-twitter"></i>
-        </div>
 
+  <!--  contenitoreFounder -->
+
+    <div class="contenitore3 p-3">
+        <div class="name">
+            <h1 class="fw-bold fs-4"> Jason Bickford</h1>
+            <p>founder and executive directon</p>
+            <div class="line "></div>
+        </div>
+        
+          <p class="lorem mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod animi nobis sit repellat porro nihil eaque in, repellendus totam doloremque, ut corrupti. Voluptatum dolorem aliqua..</p>
+          <div class="social d-flex ">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin mx-1"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
     </div> 
-      <div class="arrow2 rounded-circle d-flex justify-content-center">
-          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+
+    <!-- cambiaPagina -->
+      <div class="changePage">
+            <div class="arrow2 rounded-circle d-flex justify-content-center">
+              <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+            </div>
+            <div class="arrow3 rounded-circle d-flex justify-content-center">
+              <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+            </div>
       </div>
-       <div class="arrow3 rounded-circle d-flex justify-content-center">
-          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
-      </div>
+    
   </div>
 </template>
 
@@ -146,8 +157,8 @@ export default {
   }
 }
 .contenitore3{
-  bottom:15%;
-  right:23%;
+  bottom:130px;
+  right:450px;
   transform: translate( -23%, - 15%);
   position: absolute;
   height: 200px;

@@ -1,5 +1,7 @@
 <template>
 <div>
+  <!-- thumbtop -->
+
     <div class="thumbTop">
       <div class="container mt-5">
       <div class="row">
@@ -39,6 +41,7 @@
         </div>
     </div>
 
+<!-- thumbcenter -->
     <div class="thumbCenter">
       <div class="container">
         <div class="row">
@@ -61,13 +64,17 @@
           </div>
         </div>
       </div>
-       <div class="slide-left">
+        <div class="slide-left">
           <i class="fas fa-long-arrow-alt-left"></i>
         </div>
         <div class="slide-right">
           <i class="fas fa-long-arrow-alt-right"></i>
         </div>
     </div>
+
+    <!-- thumbbottom -->
+
+
     <div class="thumbBottom">
         <div class="icons-player">
           <i class="fas fa-play"></i>
@@ -75,9 +82,8 @@
           <div class="box1 position-absolute">
             <div class="arrow position-relative d-flex justify-content-center align-items-center">
               <i class="fas fa-shopping-cart "></i>
-              
             </div>
-        </div>
+          </div>
         <div class="box2 position-absolute">
             <div class="arrow position-relative d-flex justify-content-center">
               <img class="" src="../assets/img/ajax-loader.gif" alt="">
@@ -86,7 +92,7 @@
         <div class="arrow2 rounded-circle d-flex justify-content-center">
           <i class="fas fa-long-arrow-alt-up mt-2 "></i>
         </div>
-    </div>
+  </div>
 </div>
 
 
@@ -188,13 +194,13 @@ export default {
    & .slide-left{
       position: absolute;
       top:50%;
-      left: 5%;
+      left: 100px;
       font-size: 2rem;
   }
   & .slide-right{
     position: absolute;
     top:50%;
-    right: 5%;
+    right: 100px;
     font-size: 2rem;
 
 }
@@ -240,16 +246,16 @@ export default {
   & .slide-left{
       position: absolute;
       top:50%;
-      left: 5%;
+      left: 100px;
       font-size: 2rem;
       color: white;
   }
   & .slide-right{
     position: absolute;
     top:50%;
-    right: 5%;
+    right: 100px;
     font-size: 2rem;
-  color: white;
+    color: white;
 }
 }
 

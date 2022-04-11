@@ -1,5 +1,8 @@
 <template>
   <div>
+
+    <!-- footertop -->
+
 <div class="footer-top mt-5">
       <div class="container">
         <div class="row ">
@@ -19,8 +22,18 @@
             <ul>
               <h3>Twitter</h3>
               <div class="line "></div>
-              <i class="fab fa-twitter"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </i>
-              <i class="fab fa-twitter"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </i>
+              <div class="social-twitter d-flex">
+                <ul>
+                  <li>
+                    <i class="fab fa-twitter "> </i>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consectetur</p>
+                  </li>
+                  <li>
+                    <i class="fab fa-twitter "> </i>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consectetur</p>
+                  </li>
+                </ul>
+              </div>
             </ul>
           </div>
           <div class="col-3 mt-5">
@@ -38,7 +51,7 @@
             <ul>
               <h3>Contact me</h3>
               <div class="line "></div>
-                <li><i class="fas fa-map-marker-alt"> 437 bigBlue street, NY 10013</i> </li>  
+                <li><i class="fas fa-map-marker-alt"> </i> 437 bigBlue street, NY 10013</li>  
                 <li><i class="fas fa-phone-alt"></i> (315)5512-2579</li>  
                 <li><i class="fas fa-map-marker-alt"></i> everlead@mikido.com </li>  
                 <div class="name d-flex justify-content-between align-items-center mt-5">
@@ -51,6 +64,8 @@
         </div>
       </div>
     </div>
+
+    <!-- footerbottom -->
     <div class="footer-bottom">
       <div class="container">
         <div class="row">
@@ -102,6 +117,13 @@ export default {
     height: 15px;
     border-top:2px solid rgb(221, 63, 0)
     
+  }
+  & .social-icons{
+    color: white;
+  }
+
+  & i{
+    color: orangered;
   }
 }
 

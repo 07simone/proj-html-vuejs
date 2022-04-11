@@ -1,9 +1,13 @@
 <template>
 <div>
+
+<!--  jumbotop -->
+
 <div class="jumbotron-top">
     <div class="container.fluid">
       <div class="box-eventi">
         <h2 class="mx-3">Upcoming Events</h2>
+        <hr>
         <ul class="list-group">
             <li class="listaCittà" v-for="(element,index) in eventi" :key="index">
               <h3>{{element.città}}</h3>
@@ -21,7 +25,10 @@
         <div class="arrow2 rounded-circle d-flex justify-content-center">
           <i class="fas fa-long-arrow-alt-up mt-2 "></i>
         </div>
-  </div>
+</div>
+
+
+<!-- jumbobottom -->
 
   <div class="jumbotron-bottom d-flex align-items-center">
     <div class="container">
