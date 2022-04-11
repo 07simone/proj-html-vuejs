@@ -117,8 +117,8 @@ export default {
   position: absolute;
   left: 50%;
   transform: translate( - 50%);
-  height: 500px;
-  width: 1200px;
+  height: 50%;
+  width: 60%;
   background-color: rgb(81, 243, 189);
   margin-top: -2rem;
   
@@ -161,8 +161,8 @@ export default {
   right:450px;
   transform: translate( -23%, - 15%);
   position: absolute;
-  height: 200px;
-  width: 450px;
+  height: 21%;
+  width: 25%;
   background-color: white;
 
   .lorem{
