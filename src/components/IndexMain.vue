@@ -15,7 +15,7 @@
             <div class="col-12 ">
                 <ul class="d-flex mt-5">
                   <li class="" v-for="(element,index) in specialità" :key=index>
-                    <img class=" d-flex justify-content-center" :src="element.img" alt=""> 
+                    <img class="d-flex justify-content-center" :src="element.img" alt=""> 
                     <h3 class="fw-bold mt-3 text-center">{{element.text}}</h3>
                     <p class="text-center">{{element.description}}</p>
                   </li>

@@ -118,7 +118,7 @@ export default {
     border-top:2px solid rgb(221, 63, 0)
     
   }
-  & .social-icons{
+  & .social-icons i{
     color: white;
   }
 
