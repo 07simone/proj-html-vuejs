@@ -6,6 +6,7 @@
     <IndexJumbotron />
     <IndexThumbnails />
     <IndexContact />
+    <IndexFooter />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import IndexMain from './components/IndexMain.vue'
 import IndexJumbotron from './components/IndexJumbotron.vue'
 import IndexThumbnails from './components/IndexThumbnails.vue'
 import IndexContact from './components/IndexContact.vue'
+import IndexFooter from './components/IndexFooter.vue'
 export default {
   name: 'App',
   components: {
@@ -23,7 +25,8 @@ export default {
     IndexMain,
     IndexJumbotron,
     IndexThumbnails,
-    IndexContact
+    IndexContact,
+    IndexFooter
   }
 }
 </script>

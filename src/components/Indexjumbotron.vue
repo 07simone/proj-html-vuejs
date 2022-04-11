@@ -18,7 +18,9 @@
         </ul>
       </div>
     </div>
-    
+        <div class="arrow2 rounded-circle d-flex justify-content-center">
+          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+        </div>
   </div>
 
   <div class="jumbotron-bottom d-flex align-items-center">
@@ -62,6 +64,9 @@
         </div>
       </div>
     </div>
+      <div class="arrow2 rounded-circle d-flex justify-content-center">
+          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+      </div>
   </div>
 </div>
 
@@ -142,9 +147,18 @@ export default {
       }
     }
   }
+  & .arrow2{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 35px;
+    background-color: lightsalmon;
+  }
 }
 
 .jumbotron-bottom{
+  position: relative;
   height: 60vh;
   .line{
     width: 6%;
@@ -152,7 +166,14 @@ export default {
     border-top:2px solid rgb(221, 63, 0)
     
   }
-  
+  & .arrow2{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 35px;
+    background-color: lightsalmon;
+  }
 }
 
 </style>

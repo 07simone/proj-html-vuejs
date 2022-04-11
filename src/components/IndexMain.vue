@@ -50,6 +50,12 @@
         </div>
 
     </div> 
+      <div class="arrow2 rounded-circle d-flex justify-content-center">
+          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+      </div>
+       <div class="arrow3 rounded-circle d-flex justify-content-center">
+          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+      </div>
   </div>
 </template>
 
@@ -164,5 +170,21 @@ export default {
     
   }
 } 
+& .arrow2{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 35px;
+    background-color: lightsalmon;
+  }
+  & .arrow3{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    top: 80px;
+    background-color: lightsalmon;
+  }
 }
 </style>

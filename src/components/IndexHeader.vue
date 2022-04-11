@@ -27,6 +27,12 @@
             </div>
           </div>
         </div>
+        <div class="slide-left">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div class="slide-right">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
     </section>
     
   </div>
@@ -75,6 +81,7 @@ export default {
 .header{
   background-image: url(../assets/img/rev-slider-main-home-img-03.jpg);
   height: 100vh;
+  position: relative;
 .nav{
   justify-content: space-between;
   display: flex;
@@ -122,5 +129,18 @@ export default {
         
       }
     }
+    & .slide-left{
+      position: absolute;
+      top:50%;
+      left: 5%;
+      font-size: 2rem;
+  }
+  & .slide-right{
+    position: absolute;
+    top:50%;
+    right: 5%;
+    font-size: 2rem;
+
+}
 }
 </style>

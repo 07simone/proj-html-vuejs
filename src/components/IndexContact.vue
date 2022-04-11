@@ -1,5 +1,5 @@
 <template>
-<div>
+
     
   <div class="jumbotron-bottom d-flex align-items-center">
     <div class="container">
@@ -46,20 +46,20 @@
             
         </div>
       </div>
-        <div class="row">
-          <div class="row-cols-5">
-            <ul class="d-flex justify-content-center " >
+        <div class="row row-cols-5  ">
+            <ul class="d-flex justify-content-between ">
               <li style="list-style-type: none" v-for="(element,index) in client" :key=index>
                 <img  :src="element.img" alt="">
               </li>
             </ul>
-          </div>
         </div>
-      
+        <div class="arrow rounded-circle d-flex justify-content-center">
+          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+      </div>
     </div>
   </div>
 
-</div>
+
 
 
 
@@ -103,6 +103,7 @@ export default {
 
 <style scoped lang="scss">
 .jumbotron-bottom{
+  position: relative;
   height: 60vh;
   .line{
     width: 6%;
@@ -152,7 +153,14 @@ export default {
       background-color: orangered;
       color: white;
     }
+    & .arrow{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 35px;
+    background-color: lightsalmon;
   }
-
+}
 
 </style>

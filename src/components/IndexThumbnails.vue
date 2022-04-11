@@ -27,7 +27,16 @@
           </ul>
         </div>
       </div>
+      <div class="arrow2 rounded-circle d-flex justify-content-center">
+          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+      </div>
     </div>
+      <div class="slide-left">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div class="slide-right">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
     </div>
 
     <div class="thumbCenter">
@@ -46,9 +55,18 @@
                     <div>03</div> 
                   </div>
             </div>
+            <div class="arrow2 rounded-circle d-flex justify-content-center">
+              <i class="fas fa-long-arrow-alt-up mt-2 "></i>
+            </div>
           </div>
         </div>
       </div>
+       <div class="slide-left">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div class="slide-right">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
     </div>
     <div class="thumbBottom">
         <div class="icons-player">
@@ -64,6 +82,9 @@
             <div class="arrow position-relative d-flex justify-content-center">
               <img class="" src="../assets/img/ajax-loader.gif" alt="">
             </div>
+        </div>
+        <div class="arrow2 rounded-circle d-flex justify-content-center">
+          <i class="fas fa-long-arrow-alt-up mt-2 "></i>
         </div>
     </div>
 </div>
@@ -119,7 +140,7 @@ export default {
 <style scoped lang="scss">
 .thumbTop{
   background-image: url(../assets/img/rbt-placeholder.jpg);
-  
+  position: relative;
   & ul{
     list-style-type: none;
 
@@ -156,6 +177,27 @@ export default {
       }
     }
   }
+  & .arrow2{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 35px;
+    background-color: lightsalmon;
+  }
+   & .slide-left{
+      position: absolute;
+      top:50%;
+      left: 5%;
+      font-size: 2rem;
+  }
+  & .slide-right{
+    position: absolute;
+    top:50%;
+    right: 5%;
+    font-size: 2rem;
+
+}
 }
 .thumbCenter{
   height: 50vh;
@@ -178,46 +220,76 @@ export default {
         background-color: gray;
         border-radius: 5px;
 
-    & .slide{
-        width: 25%;
-        height: 100%;
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.6) ;
+      & .slide{
+          width: 25%;
+          height: 100%;
+          border-radius: 5px;
+          background-color: rgba(255, 255, 255, 0.6) ;
+      }
     }
-    }
-} 
+  } 
   }
+    & .arrow2{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 35px;
+    background-color: lightsalmon;
+  }
+  & .slide-left{
+      position: absolute;
+      top:50%;
+      left: 5%;
+      font-size: 2rem;
+      color: white;
+  }
+  & .slide-right{
+    position: absolute;
+    top:50%;
+    right: 5%;
+    font-size: 2rem;
+  color: white;
+}
 }
 
 .thumbBottom{
   height: 90vh;
   background-image: url(../assets/img/h1-img-04.jpg);
   position: relative;
-  & .icons-player{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, - 50%);
-    & i{
-      color: white;
-      font-size: 2rem;
+    & .icons-player{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, - 50%);
+      & i{
+        color: white;
+        font-size: 2rem;
+      }
     }
-  }
-  & .box1{
+    & .box1{
+      position: absolute;
+      right:0%;
+      top: 2.5%;
+      background-color: white;
+      width: 2rem;
+      height: 2rem;
+    }
+    & .box2{
+      position: absolute;
+      right:0%;
+      top: -2%;
+      background-color: red;
+      width: 2rem;
+      height: 2rem;
+    }
+    & .arrow2{
     position: absolute;
-    right:0%;
-    top: 2.5%;
-    background-color: white;
-    width: 2rem;
-    height: 2rem;
-  }
-  & .box2{
-    position: absolute;
-    right:0%;
-    top: -2%;
-    background-color: red;
-    width: 2rem;
-    height: 2rem;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 35px;
+    background-color: lightsalmon;
   }
 }
 
